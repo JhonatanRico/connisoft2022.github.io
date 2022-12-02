@@ -1,0 +1,22 @@
+body{background:#ECF0F1}
+
+.load{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);
+  /*change these sizes to fit into your project*/
+  width:150px;
+  height:150px;
+}
+.load hr{border:0;margin:0;width:40%;height:40%;position:absolute;border-radius:100%;animation:spin 2s ease infinite}
+/* Tiempo de Delay es de -2 hasta 2 */
+.load :first-child{background:#19A68C;animation-delay:-2s}
+.load :nth-child(2){background:#F63D3A;animation-delay:-1.5s}
+.load :nth-child(3){background:#f4ddc2;animation-delay:-1s}
+.load :nth-child(4){background:#f009e4;animation-delay:-0.5s}
+
+.load :last-child{background:#193B48} 
+
+@keyframes spin{
+  0%,100%{transform:translate(0)}
+  25%{transform:translate(160%)}
+  50%{transform:translate(160%, 160%)}
+  75%{transform:translate(0, 160%)}
+}
